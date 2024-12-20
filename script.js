@@ -45,3 +45,8 @@ document.getElementById('language-select').addEventListener('change', function()
     document.querySelector('.welcome-message').textContent = texts[selectedLanguage].welcomeMessage;
     document.querySelector('.login-description').textContent = texts[selectedLanguage].loginDescription;
 });
+document.getElementById('toggle-theme').addEventListener('click', function() {
+    document.body.classList.toggle('night-mode');
+    const themeText = document.body.classList.contains('night-mode') ? 'الوضع النهاري' : 'الوضع الليلي';
+    this.textContent = themeText;
+});
