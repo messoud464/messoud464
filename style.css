@@ -151,3 +151,16 @@ body.night-mode {
     width: 20px;
     margin-right: 8px;
     }
+/* تحسين قسم اللغات */
+#languages {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* تحسين التنسيق للأزرار والنصوص */
+.welcome-message, .login-description {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    }
+
