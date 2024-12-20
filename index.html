@@ -1,55 +1,55 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jamal's MythicVault</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">الرئيسية</a></li>
-        <li><a href="#features">الميزات</a></li>
-        <li><a href="#signup">التسجيل</a></li>
-        <li><a href="#about">عن الموقع</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="container">
+        <header>
+            <h1>مرحبا بك في موقعنا</h1>
+        </header>
 
-  <section id="home">
-    <div class="hero">
-      <h1>مرحبًا بك في الموقع الأسطوري</h1>
-      <p>ابدأ تجربتك معنا الآن وكن جزءًا من التميز!</p>
-      <div class="buttons">
-        <button onclick="window.location.href='#signup';">التسجيل</button>
-        <button onclick="window.location.href='#login';">تسجيل الدخول</button>
-      </div>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#login" class="nav-link">تسجيل الدخول</a></li>
+                <li><a href="#languages" class="nav-link">اللغات</a></li>
+                <li><a href="#settings" class="nav-link">الإعدادات</a></li>
+                <li><a href="#search" class="nav-link">بحث</a></li>
+            </ul>
+        </nav>
+
+        <!-- Login Section -->
+        <section id="login">
+            <form action="#" method="post" id="login-form">
+                <input type="text" placeholder="اسم المستخدم" required>
+                <input type="password" placeholder="كلمة المرور" required>
+                <button type="submit" class="btn-login">تسجيل الدخول</button>
+            </form>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages">
+            <select id="language-select">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+            </select>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings">
+            <button id="toggle-theme">تبديل الوضع</button>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search">
+            <input type="text" placeholder="بحث...">
+        </section>
     </div>
-  </section>
 
-  <section id="features">
-    <h2>الميزات</h2>
-    <p>اكتشف مجموعة مذهلة من الميزات المخصصة لك.</p>
-  </section>
-
-  <section id="signup">
-    <h2>التسجيل</h2>
-    <form>
-      <input type="text" placeholder="اسم المستخدم">
-      <input type="email" placeholder="البريد الإلكتروني">
-      <button type="submit">تسجيل</button>
-    </form>
-  </section>
-
-  <section id="about">
-    <h2>عن الموقع</h2>
-    <p>منصة مبتكرة تقدم لك كل ما تحتاجه بأسلوب أسطوري.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Jamal's MythicVault. جميع الحقوق محفوظة.</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
