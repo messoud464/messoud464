@@ -67,3 +67,87 @@ nav ul li a {
     border-radius: 5px;
     border: none;
 }
+/* تحسين التصميم بشكل عام */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* اللون الأسود الفاتح */
+    color: white;
+}
+
+/* شريط التنقل */
+.navbar {
+    background-color: #2a2a2a; /* لون الخلفية الداكنة */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* قائمة التنقل */
+.navbar-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+/* العناصر في القائمة */
+.navbar-item {
+    color: #f7c42d; /* لون النص الأصفر */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* تأثير التمرير على العناصر */
+.navbar-item:hover {
+    background-color: #f7c42d;
+    color: #121212;
+    transform: scale(1.1);
+}
+
+/* تنسيق الحقول والأزرار */
+input, button {
+    padding: 12px;
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+}
+
+button {
+    background-color: #f7c42d;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* تأثير التمرير على الأزرار */
+button:hover {
+    background-color: #f1a700;
+}
+
+/* تحسين الوضع الليلي */
+body.night-mode {
+    background-color: #181818;
+    color: white;
+}
+
+/* تحسين الواجهة */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* إضافة تأثيرات للصور أو الأيقونات في الأزرار */
+.navbar-item img {
+    width: 20px;
+    margin-right: 8px;
+    }
