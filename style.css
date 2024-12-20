@@ -211,20 +211,6 @@ header p {
 .button-social:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 30px rgba(219, 68, 55, 0.9);
-}
-/* إضافة مسافات بين الأقسام */
-.section {
-    margin-bottom: 20px; /* المسافة بين الأقسام */
-}
 
-/* تنسيق الأزرار */
-.button-primary,
-.button-secondary,
-.button-social {
-    margin: 5px; /* المسافة بين الأزرار */
-}
+    
 
-/* تنسيق حقل البحث */
-#search-bar {
-    margin-bottom: 10px; /* المسافة أسفل حقل البحث */
-}
