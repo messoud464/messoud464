@@ -50,3 +50,18 @@ document.getElementById('toggle-theme').addEventListener('click', function() {
     const themeText = document.body.classList.contains('night-mode') ? 'الوضع النهاري' : 'الوضع الليلي';
     this.textContent = themeText;
 });
+// تغيير الوضع بين النهار والليل
+document.getElementById('toggle-theme').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+});
+
+// تغيير اللغة
+document.getElementById('language-select').addEventListener('change', function() {
+    let language = this.value;
+    if (language === 'ar') {
+        document.documentElement.lang = 'ar';
+    } else {
+        document.documentElement.lang = 'en';
+    }
+});
+                                                            
