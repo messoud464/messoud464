@@ -1,108 +1,69 @@
-/* الخطوط والألوان */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-
 body {
-  font-family: 'Cairo', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #FF4500, #FFD700);
-  color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-  background: #000;
-  padding: 15px 0;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
+header h1 {
+    text-align: center;
+    margin-top: 20px;
 }
 
-header nav ul li {
-  margin: 0 15px;
+nav ul {
+    list-style-type: none;
+    text-align: center;
 }
 
-header nav ul li a {
-  color: #FFD700;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
-header nav ul li a:hover {
-  color: #FF4500;
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #FFD700, #FF4500);
-  color: #000;
+#login-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+.btn-login {
+    background-color: #f00;
+    padding: 15px;
+    color: white;
+    width: 80%;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }
 
-.hero .buttons button {
-  margin: 10px;
-  padding: 10px 20px;
-  background: #FF4500;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background 0.3s;
+#toggle-theme {
+    background-color: #f00;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }
 
-.hero .buttons button:hover {
-  background: #FFD700;
-  color: #000;
-}
-
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 2.5em;
-  color: #FFD700;
-  margin-bottom: 20px;
-}
-
-form input {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-  border: 2px solid #FFD700;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 10px 20px;
-  background: #FF4500;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #FFD700;
-  color: #000;
-}
-
-footer {
-  background: #000;
-  color: #FFD700;
-  text-align: center;
-  padding: 15px 0;
+#search input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
 }
