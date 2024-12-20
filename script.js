@@ -27,3 +27,21 @@ document.querySelectorAll('.navbar-item').forEach(item => {
         item.style.transform = 'scale(1)';
     });
 });
+document.getElementById('language-select').addEventListener('change', function() {
+    const selectedLanguage = this.value;
+
+    const texts = {
+        ar: {
+            welcomeMessage: "مرحبا بك في موقعنا",
+            loginDescription: "يرجى تسجيل الدخول للوصول إلى حسابك."
+        },
+        en: {
+            welcomeMessage: "Welcome to our website",
+            loginDescription: "Please log in to access your account."
+        }
+    };
+
+    // تحديث النصوص بناءً على اللغة المختارة
+    document.querySelector('.welcome-message').textContent = texts[selectedLanguage].welcomeMessage;
+    document.querySelector('.login-description').textContent = texts[selectedLanguage].loginDescription;
+});
