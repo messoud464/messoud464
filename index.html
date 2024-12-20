@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الموقع الأسطوري</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamal's MythicVault</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>مرحبًا بك في الموقع الأسطوري</h1>
-        <p>ابدأ تجربتك معنا الآن وكن جزءًا من التميز!</p>
-    </header>
-    <main>
-        <section class="intro">
-            <h2>Welcome to Jamal's MythicVault</h2>
-            <p>Enter a world of wonder, power, and creativity!</p>
-        </section>
-        <section class="actions">
-            <button class="btn">التسجيل</button>
-            <button class="btn">تسجيل الدخول</button>
-            <button class="btn">تسجيل الدخول باستخدام جوجل</button>
-        </section>
-        <section class="language-selection">
-            <label for="language-select">اختر اللغة:</label>
-            <select id="language-select">
-                <option value="ar">العربية 🇸🇦</option>
-                <option value="en">English 🇺🇸</option>
-                <option value="fr">Français 🇫🇷</option>
-                <option value="es">Español 🇪🇸</option>
-                <option value="de">Deutsch 🇩🇪</option>
-            </select>
-        </section>
-    </main>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#features">الميزات</a></li>
+        <li><a href="#signup">التسجيل</a></li>
+        <li><a href="#about">عن الموقع</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h1>مرحبًا بك في الموقع الأسطوري</h1>
+      <p>ابدأ تجربتك معنا الآن وكن جزءًا من التميز!</p>
+      <div class="buttons">
+        <button onclick="window.location.href='#signup';">التسجيل</button>
+        <button onclick="window.location.href='#login';">تسجيل الدخول</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>الميزات</h2>
+    <p>اكتشف مجموعة مذهلة من الميزات المخصصة لك.</p>
+  </section>
+
+  <section id="signup">
+    <h2>التسجيل</h2>
+    <form>
+      <input type="text" placeholder="اسم المستخدم">
+      <input type="email" placeholder="البريد الإلكتروني">
+      <button type="submit">تسجيل</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>عن الموقع</h2>
+    <p>منصة مبتكرة تقدم لك كل ما تحتاجه بأسلوب أسطوري.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jamal's MythicVault. جميع الحقوق محفوظة.</p>
+  </footer>
 </body>
 </html>
