@@ -74,4 +74,62 @@
     <h2 class="welcome-message">مرحبا بك في موقعنا</h2>
     <p class="login-description">يرجى تسجيل الدخول للوصول إلى حسابك.</p>
 </section>
+!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع التطبيقات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مرحبا بك في موقعنا</h1>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar">
+            <ul>
+                <li><a href="#login" class="nav-link">تسجيل الدخول</a></li>
+                <li><a href="#languages" class="nav-link">اللغات</a></li>
+                <li><a href="#settings" class="nav-link">الإعدادات</a></li>
+                <li><a href="#search" class="nav-link">بحث</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <!-- قسم تسجيل الدخول -->
+            <section id="login">
+                <form action="#" method="post" id="login-form">
+                    <input type="text" placeholder="اسم المستخدم" required>
+                    <input type="password" placeholder="كلمة المرور" required>
+                    <button type="submit" class="btn-login">تسجيل الدخول</button>
+                </form>
+            </section>
+
+            <!-- قسم اللغات -->
+            <section id="languages">
+                <select id="language-select">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                </select>
+            </section>
+
+            <!-- قسم الإعدادات -->
+            <section id="settings">
+                <button id="toggle-theme">تبديل الوضع</button>
+            </section>
+
+            <!-- قسم البحث -->
+            <section id="search">
+                <input type="text" placeholder="بحث...">
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
