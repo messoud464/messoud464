@@ -67,112 +67,28 @@ nav ul li a {
     border-radius: 5px;
     border: none;
 }
-/* تحسين التصميم بشكل عام */
+/* التنسيق العام */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* اللون الأسود الفاتح */
-    color: white;
+    background-color: #f4f4f4;
 }
 
-/* شريط التنقل */
-.navbar {
-    background-color: #2a2a2a; /* لون الخلفية الداكنة */
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* قائمة التنقل */
-.navbar-list {
-    list-style: none;
-    display: flex;
-    padding: 0;
-}
-
-/* العناصر في القائمة */
-.navbar-item {
-    color: #f7c42d; /* لون النص الأصفر */
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 18px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* تأثير التمرير على العناصر */
-.navbar-item:hover {
-    background-color: #f7c42d;
-    color: #121212;
-    transform: scale(1.1);
-}
-
-/* تنسيق الحقول والأزرار */
-input, button {
-    padding: 12px;
-    width: 80%;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #222;
-    color: #fff;
-    font-size: 16px;
-}
-
-button {
-    background-color: #f7c42d;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* تأثير التمرير على الأزرار */
-button:hover {
-    background-color: #f1a700;
-}
-
-/* تحسين الوضع الليلي */
-body.night-mode {
-    background-color: #181818;
-    color: white;
-}
-
-/* تحسين الواجهة */
+/* حاوية الصفحة */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
 }
 
-/* إضافة تأثيرات للصور أو الأيقونات في الأزرار */
-.navbar-item img {
-    width: 20px;
-    margin-right: 8px;
-    }
-/* تحسين قسم اللغات */
-#languages {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* تحسين التنسيق للأزرار والنصوص */
-.welcome-message, .login-description {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
-    }
-/* تنسيق القائمة الجانبية */
+/* الشريط الجانبي */
 #sidebar {
     width: 250px;
     background-color: #333;
     color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #sidebar ul {
@@ -181,7 +97,7 @@ body.night-mode {
 }
 
 #sidebar ul li {
-    padding: 10px;
+    margin: 15px 0;
 }
 
 #sidebar ul li a {
@@ -191,62 +107,45 @@ body.night-mode {
 }
 
 #sidebar ul li a:hover {
-    background-color: #444;
-    transition: background-color 0.3s;
+    color: #f1f1f1;
 }
 
-/* تنسيق المحتوى الرئيسي */
+/* المنطقة الرئيسية */
 #main-content {
-    margin-left: 260px;
+    flex: 1;
     padding: 20px;
 }
 
-/* تأثيرات الوضع الليلي */
-body.night-mode {
-    background-color: #121212;
-    color: #ffffff;
+/* تنسيق الأقسام */
+section {
+    margin-bottom: 30px;
 }
 
-/* تأثيرات الحركات عند التبديل */
-button#toggle-theme {
-    transition: background-color 0.3s, color 0.3s;
-}
-
-button#toggle-theme:hover {
-    background-color: #444;
-    color: #fff;
-}
-
-/* تحسين استجابة التصميم */
-@media (max-width: 768px) {
-    #sidebar {
-        width: 200px;
-    }
-
-    #main-content {
-        margin-left: 210px;
-    }
-}
-
-/* تصميم للأزرار والنماذج */
-input[type="text"], input[type="password"], select {
-    width: 100%;
+form input, form button, select {
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #28a745;
+form button {
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#toggle-theme {
+    background-color: #007BFF;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #218838;
-    }
-    
+#toggle-theme:hover {
+    background-color: #0056b3;
+}
