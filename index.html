@@ -3,134 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jamal Gold Vault - Secure Precious Metal Storage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.5/cdn.min.js"></script>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark-gold: #996515;
+            --light-gold: #FFE5B4;
+            --black: #1A1A1A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+        }
+
+        .navbar {
+            background: linear-gradient(to right, var(--black), #2C2C2C);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--gold);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--light-gold);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1920/1080') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: var(--gold);
+            color: var(--black);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: var(--dark-gold);
+            color: white;
+        }
+
+        .features {
+            padding: 5rem 2rem;
+            background: #f9f9f9;
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: var(--black);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .mobile-menu-button {
+            display: none;
+            color: var(--gold);
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-button {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--black);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>مرحبا بك في موقعنا</h1>
-        </header>
-
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="#login" class="nav-link">تسجيل الدخول</a></li>
-                <li><a href="#languages" class="nav-link">اللغات</a></li>
-                <li><a href="#settings" class="nav-link">الإعدادات</a></li>
-                <li><a href="#search" class="nav-link">بحث</a></li>
-            </ul>
-        </nav>
-
-        <!-- Login Section -->
-        <section id="login">
-            <form action="#" method="post" id="login-form">
-                <input type="text" placeholder="اسم المستخدم" required>
-                <input type="password" placeholder="كلمة المرور" required>
-                <button type="submit" class="btn-login">تسجيل الدخول</button>
-            </form>
-        </section>
-
-        <!-- Languages Section -->
-        <section id="languages">
-            <select id="language-select">
-                <option value="ar">العربية</option>
-                <option value="en">English</option>
-            </select>
-        </section>
-
-        <!-- Settings Section -->
-        <section id="settings">
-            <button id="toggle-theme">تبديل الوضع</button>
-        </section>
-
-        <!-- Search Section -->
-        <section id="search">
-            <input type="text" placeholder="بحث...">
-        </section>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-<div class="navbar">
-    <ul class="navbar-list">
-        <li><a href="#login" class="navbar-item">تسجيل الدخول</a></li>
-        <li><a href="#languages" class="navbar-item">اللغات</a></li>
-        <li><a href="#settings" class="navbar-item">الإعدادات</a></li>
-        <li><a href="#search" class="navbar-item">بحث</a></li>
-    </ul>
+    <nav class="navbar" x-data="{ isOpen: false }">
+        <div class="nav-content">
+            <a href="#" class="logo">JAMAL GOLD VAULT</a>
+            <button class="mobile-menu-button" @click="isOpen = !isOpen">☰</button>
+            <div class="nav-links" :class="{ 'active': isOpen }">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#security">Security</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-<!-- Languages Section -->
-<section id="languages">
-    <select id="language-select">
-        <option value="ar">العربية</option>
-        <option value="en">English</option>
-    </select>
-</section>
+    </nav>
 
-<!-- Example Section with Dynamic Text -->
-<section id="dynamic-content">
-    <h2 class="welcome-message">مرحبا بك في موقعنا</h2>
-    <p class="login-description">يرجى تسجيل الدخول للوصول إلى حسابك.</p>
-</section>
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع التطبيقات</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>مرحبا بك في موقعنا</h1>
-        </header>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Secure Your Legacy</h1>
+            <p>Welcome to Jamal Gold Vault, where we provide state-of-the-art security for your precious metals and valuables. With decades of experience and cutting-edge technology, your assets are in safe hands.</p>
+            <a href="#contact" class="cta-button">Schedule a Consultation</a>
+        </div>
+    </section>
 
-        <!-- Sidebar Navigation -->
-        <aside id="sidebar">
-            <ul>
-                <li><a href="#login" class="nav-link">تسجيل الدخول</a></li>
-                <li><a href="#languages" class="nav-link">اللغات</a></li>
-                <li><a href="#settings" class="nav-link">الإعدادات</a></li>
-                <li><a href="#search" class="nav-link">بحث</a></li>
-            </ul>
-        </aside>
+    <section class="features" id="services">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Maximum Security</h3>
+                <p>24/7 armed security, biometric access control, and advanced surveillance systems protect your valuables.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💎</div>
+                <h3>Premium Storage</h3>
+                <p>Climate-controlled vaults with individual compartments designed specifically for precious metals and valuables.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Insurance Coverage</h3>
+                <p>Comprehensive insurance coverage for all stored items, providing peace of mind for our clients.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Main Content Area -->
-        <main id="main-content">
-            <!-- Login Section -->
-            <section id="login">
-                <form action="#" method="post" id="login-form">
-                    <input type="text" placeholder="اسم المستخدم" required>
-                    <input type="password" placeholder="كلمة المرور" required>
-                    <button type="submit" class="btn-login">تسجيل الدخول</button>
-                </form>
-            </section>
-
-            <!-- Languages Section -->
-            <section id="languages">
-                <select id="language-select">
-                    <option value="ar">العربية</option>
-                    <option value="en">English</option>
-                </select>
-            </section>
-
-            <!-- Settings Section -->
-            <section id="settings">
-                <button id="toggle-theme">تبديل الوضع</button>
-            </section>
-
-            <!-- Search Section -->
-            <section id="search">
-                <input type="text" placeholder="بحث...">
-            </section>
-        </main>
-    </div>
-
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Jamal Gold Vault. All rights reserved.</p>
+    </footer>
 </body>
-                </html>
-
-
+            </html>
